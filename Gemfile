@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -43,6 +44,9 @@ group :development, :test do
   gem 'spring'
 
   # Testing framework. Running the command 'rspec' will run all the files in the spec folder that end with _spec.rb. Alternatively, running 'rspec file_spec.rb' will run just the specified test.
-  gem 'rspec', '~> 3.4'
+  gem 'rspec-rails', '~> 3.5'
+
+  # Rspec feature specs mix in functionality from the capybara gem, thus they require capybara to use.
+  gem 'capybara'
 end
 
