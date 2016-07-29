@@ -41,5 +41,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Testing framework. Running the command 'rspec' will run all the files in the spec folder that end with _spec.rb. Alternatively, running 'rspec file_spec.rb' will run just the specified test.
+  gem 'rspec', '~> 3.4'
 end
 
